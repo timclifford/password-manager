@@ -53,17 +53,6 @@ var argv = require('yargs')
 	.argv;
 
 var command = argv._[0];
-// Creating an account.
-// 		--name
-// 		--username
-// 		--password
-
-// Get account.
-// 		--name
-
-// account.name Facebook
-// account.username User123
-// account.password Password123
 
 function getAccounts (masterPassword) {
 	var encryptedAccount = storage.getItemSync('accounts');
@@ -136,12 +125,3 @@ if (command === 'create') {
 		console.log('Unable to fetch account. Please check your master password.');
 	}
 }
-
-// createAccount({
-// 	name: 'Facebook',
-// 	username: 'someemail@gmail.com',
-// 	password: '123!'
-// });
-
-// var facebookAccount = getAccount('Facebook');
-// console.log(facebookAccount);
