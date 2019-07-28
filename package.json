@@ -5,8 +5,8 @@
   "main": "app.js",
   "dependencies": {
     "crypto-js": "^3.1.5",
-    "node-persist": "0.0.8",
-    "yargs": "^3.31.0"
+    "node-persist": "3.0.5",
+    "yargs": "^13.3.0"
   },
   "devDependencies": {},
   "scripts": {
